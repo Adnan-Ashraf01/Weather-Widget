@@ -1,0 +1,119 @@
+
+/* Main weather info container */
+.InfoBox {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.cardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Weather card */
+.weatherCard {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 16px !important;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weatherCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Weather image */
+.weatherImage {
+    height: 125px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Card content */
+.weatherContent {
+    padding: 13px !important;
+    text-align: center;
+}
+
+/* City name and weather icon */
+.cityName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-size: 21px !important;
+    font-weight: 700 !important;
+    color: #203a43;
+    margin-bottom: 8px !important;
+}
+
+/* Temperature */
+.weatherTemp {
+    font-size: 35px;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 12px;
+}
+
+/* Weather information grid */
+.weatherStats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+}
+
+.weatherItem {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #f1f5f9;
+    padding: 9px 6px;
+    border-radius: 9px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.weatherItem strong {
+    color: #203a43;
+    font-size: 14px;
+}
+
+/* Weather description */
+.weatherDescription {
+    margin-top: 11px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    text-transform: capitalize;
+}
+
+/* Feels like temperature */
+.feelsLike {
+    margin-top: 5px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .weatherCard {
+        max-width: 100%;
+    }
+
+    .weatherImage {
+        height: 115px;
+    }
+
+    .weatherTemp {
+        font-size: 32px;
+    }
+
+    .weatherContent {
+        padding: 12px !important;
+    }
+}

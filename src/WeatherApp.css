@@ -1,0 +1,36 @@
+
+.weatherApp {
+    min-height: 100vh;
+    padding: 25px 20px;
+    text-align: center;
+    color: white;
+}
+
+.appTitle {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.appSubtitle {
+    color: #cbd5e1;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .weatherApp {
+        padding: 20px 12px;
+    }
+
+    .appTitle {
+        font-size: 27px;
+    }
+
+    .appSubtitle {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+}
