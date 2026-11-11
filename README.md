@@ -2,6 +2,10 @@
 
 A responsive weather application built using **React.js** and **Material UI** that displays real-time weather information for cities around the world.
 
+## 🌐 Live Demo
+
+[View Weather Dashboard](https://weather-widget-b8.vercel.app/)
+
 ## ✨ Features
 - Search weather by city name.
 - Display current temperature, humidity, and weather conditions.
